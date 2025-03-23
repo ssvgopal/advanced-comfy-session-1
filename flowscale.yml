@@ -190,6 +190,15 @@ workflows:
     outputs: []
     skip_preprocess: true
     advancedConfig: false
+  - id: 26wnl23bert
+    name: photo_to_video_make_your_images_move_api.json
+    file: openart/photo_to_video_make_your_images_move_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: dt1vvo7wj2u
     name: basic_inpainting.json
@@ -264,4 +273,8 @@ normal_workflows:
       workflow-photo-to-video-make-your-images-move-lixcxndqggs3wqq6xct7-neuralunk-openart.ai.json
     file: >-
       openart/workflow-photo-to-video-make-your-images-move-lixcxndqggs3wqq6xct7-neuralunk-openart.ai.json
+    version: 0
+  - id: h4jbilumltc
+    name: photo_to_video_make_your_images_move.json
+    file: openart/photo_to_video_make_your_images_move.json
     version: 0
