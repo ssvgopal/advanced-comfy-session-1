@@ -1,7 +1,7 @@
 {
     "3": {
         "inputs": {
-            "seed": 46361321036256,
+            "seed": 576906402950927,
             "steps": 25,
             "cfg": 7.5,
             "sampler_name": "euler",
@@ -40,7 +40,7 @@
     },
     "6": {
         "inputs": {
-            "text": "man and woman with appropriate clothes, masterpiece,best quality,(photorealistic:1.1),8k raw photo,a,detailed faceÃ¯Â¼Âdetailed skin,depth of field,",
+            "text": "man and woman with appropriate clothes, masterpiece,best quality,(photorealistic:1.1),8k raw photo,a,detailed faceÃ¯Â¼Âdetailed skin,depth of field,\nKeep facial features clear and natural. Any cuts or picture damages can be removed",
             "clip": [
                 "4",
                 1
@@ -95,7 +95,7 @@
     },
     "13": {
         "inputs": {
-            "image": "old.1.jpg",
+            "image": "restore.2.jfif",
             "upload": "image"
         },
         "class_type": "LoadImage",
@@ -277,7 +277,7 @@
     },
     "41": {
         "inputs": {
-            "enabled": true,
+            "enabled": false,
             "swap_model": "inswapper_128.onnx",
             "facedetection": "retinaface_resnet50",
             "face_restore_model": "codeformer-v0.1.0.pth",
