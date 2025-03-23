@@ -221,3 +221,7 @@ normal_workflows:
     name: fashion_photography_workflow.json
     file: inpainting_and_outpainting/fashion_photography_workflow.json
     version: 1
+  - id: hx4xcp6k8c9
+    name: comfyui_basic_txt2vid_with_prompt_scheduling.json
+    file: openart/comfyui_basic_txt2vid_with_prompt_scheduling.json
+    version: 0
