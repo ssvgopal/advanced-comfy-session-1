@@ -229,7 +229,3 @@ normal_workflows:
     name: flux_lora_upscale.json
     file: openart/flux_lora_upscale.json
     version: 0
-  - id: j3di0kwbagf
-    name: linkedin_profile_builder.json
-    file: openart/linkedin_profile_builder.json
-    version: 0
