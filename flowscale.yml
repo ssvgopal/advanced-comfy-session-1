@@ -259,3 +259,9 @@ normal_workflows:
     name: old_photo_restoration_workflow.json
     file: openart/old_photo_restoration_workflow.json
     version: 0
+  - id: r208q4w74fl
+    name: >-
+      workflow-photo-to-video-make-your-images-move-lixcxndqggs3wqq6xct7-neuralunk-openart.ai.json
+    file: >-
+      openart/workflow-photo-to-video-make-your-images-move-lixcxndqggs3wqq6xct7-neuralunk-openart.ai.json
+    version: 0
