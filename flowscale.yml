@@ -225,3 +225,7 @@ normal_workflows:
     name: flux_consistent_character_sheet.json
     file: openart/flux_consistent_character_sheet.json
     version: 0
+  - id: w5hhurghmt
+    name: flux_lora_upscale.json
+    file: openart/flux_lora_upscale.json
+    version: 0
