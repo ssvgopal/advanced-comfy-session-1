@@ -1,0 +1,847 @@
+{
+    "last_node_id": 90,
+    "last_link_id": 169,
+    "nodes": [
+        {
+            "id": 8,
+            "type": "VAEDecode",
+            "pos": [
+                890,
+                360
+            ],
+            "size": [
+                210,
+                46
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "samples",
+                    "type": "LATENT",
+                    "link": 90
+                },
+                {
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 168
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        116
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "VAEDecode"
+            },
+            "widgets_values": [],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 12,
+            "type": "SVD_img2vid_Conditioning",
+            "pos": [
+                420,
+                0
+            ],
+            "size": [
+                315,
+                218
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "clip_vision",
+                    "type": "CLIP_VISION",
+                    "link": 24
+                },
+                {
+                    "name": "init_image",
+                    "type": "IMAGE",
+                    "link": 41,
+                    "slot_index": 1
+                },
+                {
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 167
+                },
+                {
+                    "name": "width",
+                    "type": "INT",
+                    "widget": {
+                        "name": "width"
+                    },
+                    "link": 162,
+                    "slot_index": 3
+                },
+                {
+                    "name": "height",
+                    "type": "INT",
+                    "widget": {
+                        "name": "height"
+                    },
+                    "link": 163,
+                    "slot_index": 4
+                },
+                {
+                    "name": "fps",
+                    "type": "INT",
+                    "widget": {
+                        "name": "fps"
+                    },
+                    "link": 159
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "shape": 3,
+                    "links": [
+                        86
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "shape": 3,
+                    "links": [
+                        87
+                    ],
+                    "slot_index": 1
+                },
+                {
+                    "name": "latent",
+                    "type": "LATENT",
+                    "shape": 3,
+                    "links": [
+                        88
+                    ],
+                    "slot_index": 2
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "SVD_img2vid_Conditioning"
+            },
+            "widgets_values": [
+                1024,
+                576,
+                24,
+                40,
+                12,
+                0.05
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+        },
+        {
+            "id": 14,
+            "type": "VideoLinearCFGGuidance",
+            "pos": [
+                420,
+                -150
+            ],
+            "size": [
+                315,
+                58
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 134
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "shape": 3,
+                    "links": [
+                        166
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "VideoLinearCFGGuidance"
+            },
+            "widgets_values": [
+                1
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+        },
+        {
+            "id": 15,
+            "type": "ImageOnlyCheckpointLoader",
+            "pos": [
+                -70,
+                -150
+            ],
+            "size": [
+                410,
+                100
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "shape": 3,
+                    "links": [
+                        134
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "CLIP_VISION",
+                    "type": "CLIP_VISION",
+                    "shape": 3,
+                    "links": [
+                        24
+                    ],
+                    "slot_index": 1
+                },
+                {
+                    "name": "VAE",
+                    "type": "VAE",
+                    "shape": 3,
+                    "links": [],
+                    "slot_index": 2
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "ImageOnlyCheckpointLoader"
+            },
+            "widgets_values": [
+                "SVD/svd_xt.safetensors"
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
+        },
+        {
+            "id": 23,
+            "type": "LoadImage",
+            "pos": [
+                -620,
+                -490
+            ],
+            "size": [
+                410,
+                420
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "shape": 3,
+                    "links": [
+                        41,
+                        161
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "shape": 3,
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "ComfyUI_00007_.png",
+                "image"
+            ],
+            "color": "#ff94d4",
+            "bgcolor": "#ff80c0"
+        },
+        {
+            "id": 26,
+            "type": "VHS_VideoCombine",
+            "pos": [
+                1170,
+                -240
+            ],
+            "size": [
+                493.3846435546875,
+                276
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 116
+                },
+                {
+                    "name": "frame_rate",
+                    "type": "INT",
+                    "widget": {
+                        "name": "frame_rate"
+                    },
+                    "link": 160,
+                    "slot_index": 1
+                },
+                {
+                    "name": "meta_batch",
+                    "type": "VHS_BatchManager",
+                    "shape": 7,
+                    "link": null
+                },
+                {
+                    "name": "vae",
+                    "type": "VAE",
+                    "shape": 7,
+                    "link": null
+                },
+                {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "shape": 7,
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "Filenames",
+                    "type": "VHS_FILENAMES",
+                    "shape": 3,
+                    "links": null,
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfyui-videohelpersuite",
+                "ver": "5e61bcf218fe3bb7c899bbd584bbc99a9d05fb42",
+                "Node name for S&R": "VHS_VideoCombine"
+            },
+            "widgets_values": {
+                "frame_rate": 12,
+                "loop_count": 0,
+                "filename_prefix": "SVD-",
+                "format": "image/gif",
+                "pingpong": false,
+                "save_output": true,
+                "videopreview": {
+                    "hidden": false,
+                    "paused": false,
+                    "params": {
+                        "filename": "SVD-_00002.gif",
+                        "subfolder": "",
+                        "type": "temp",
+                        "format": "image/gif"
+                    }
+                }
+            },
+            "color": "#233",
+            "bgcolor": "#355"
+        },
+        {
+            "id": 38,
+            "type": "KSampler",
+            "pos": [
+                790,
+                -150
+            ],
+            "size": [
+                315,
+                446
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 166,
+                    "slot_index": 0
+                },
+                {
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "link": 86,
+                    "slot_index": 1
+                },
+                {
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "link": 87
+                },
+                {
+                    "name": "latent_image",
+                    "type": "LATENT",
+                    "link": 88,
+                    "slot_index": 3
+                },
+                {
+                    "name": "seed",
+                    "type": "INT",
+                    "widget": {
+                        "name": "seed"
+                    },
+                    "link": 169,
+                    "slot_index": 4
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "shape": 3,
+                    "links": [
+                        90
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "KSampler"
+            },
+            "widgets_values": [
+                925194601513098,
+                "randomize",
+                27,
+                5.5,
+                "euler",
+                "normal",
+                1
+            ],
+            "color": "#233",
+            "bgcolor": "#355"
+        },
+        {
+            "id": 83,
+            "type": "PrimitiveNode",
+            "pos": [
+                134,
+                -300
+            ],
+            "size": [
+                210,
+                82
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "INT",
+                    "type": "INT",
+                    "widget": {
+                        "name": "fps"
+                    },
+                    "links": [
+                        159,
+                        160
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "title": "FPS",
+            "properties": {
+                "Run widget replace on values": false
+            },
+            "widgets_values": [
+                12,
+                "fixed"
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
+        },
+        {
+            "id": 84,
+            "type": "CM_NearestSDXLResolution",
+            "pos": [
+                140,
+                60
+            ],
+            "size": [
+                210,
+                46
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 161
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "width",
+                    "type": "INT",
+                    "shape": 3,
+                    "links": [
+                        162
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "height",
+                    "type": "INT",
+                    "shape": 3,
+                    "links": [
+                        163
+                    ],
+                    "slot_index": 1
+                }
+            ],
+            "properties": {
+                "cnr_id": "ComfyMath",
+                "ver": "c01177221c31b8e5fbc062778fc8254aeb541638",
+                "Node name for S&R": "CM_NearestSDXLResolution"
+            },
+            "widgets_values": [],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 87,
+            "type": "Note",
+            "pos": [
+                -1130,
+                -430
+            ],
+            "size": [
+                461.88677978515625,
+                278.91009521484375
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "#NeuraLunk info & more FREE workflows",
+            "properties": {
+                "text": ""
+            },
+            "widgets_values": [
+                "CREDITS to...\nAll those who create amazing Models and Lora's, controlnet and so on ....\nAll the fine people working on ComfyUI itself,\nand the amazing creators of Custom-Nodes that make all this possible !\n\na ComfyUI Workflow by: MrLunk / #NeuraLunk\nFor: OpenArt.ai \n\nMy Facebook page:\nhttps://www.facebook.com/NeuraLunk \n\n--->> FREE downloadable:\n350+ of my Workflows and art-pieces:\n\nLink:\nhttps://openart.ai/profile/neuralunk\n\nGreetz, Be well and Happy !\nPeter Lunk "
+            ],
+            "color": "#222",
+            "bgcolor": "#000"
+        },
+        {
+            "id": 88,
+            "type": "Note",
+            "pos": [
+                1224,
+                445
+            ],
+            "size": [
+                377.9303283691406,
+                119.19210052490234
+            ],
+            "flags": {
+                "pinned": false
+            },
+            "order": 4,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "properties": {
+                "text": ""
+            },
+            "widgets_values": [
+                "Do NOT forget to save your image when it is done.\nThe images ae not stored on the server (yet), this is under development by the OpenArt.ai team.\n\n#NeuraLunk "
+            ],
+            "color": "#222",
+            "bgcolor": "#000"
+        },
+        {
+            "id": 89,
+            "type": "VAELoader",
+            "pos": [
+                20,
+                380
+            ],
+            "size": [
+                315,
+                58
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "VAE",
+                    "type": "VAE",
+                    "shape": 3,
+                    "links": [
+                        167,
+                        168
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.15",
+                "Node name for S&R": "VAELoader"
+            },
+            "widgets_values": [
+                "vae-ft-mse-840000-ema-pruned.safetensors"
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
+        },
+        {
+            "id": 90,
+            "type": "CR Seed",
+            "pos": [
+                777,
+                -341
+            ],
+            "size": [
+                315,
+                102
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "seed",
+                    "type": "INT",
+                    "shape": 3,
+                    "links": [
+                        169
+                    ],
+                    "slot_index": 0
+                },
+                {
+                    "name": "show_help",
+                    "type": "STRING",
+                    "shape": 3,
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+                "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+                "Node name for S&R": "CR Seed"
+            },
+            "widgets_values": [
+                854755171140025,
+                "randomize"
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
+        }
+    ],
+    "links": [
+        [
+            24,
+            15,
+            1,
+            12,
+            0,
+            "CLIP_VISION"
+        ],
+        [
+            41,
+            23,
+            0,
+            12,
+            1,
+            "IMAGE"
+        ],
+        [
+            86,
+            12,
+            0,
+            38,
+            1,
+            "CONDITIONING"
+        ],
+        [
+            87,
+            12,
+            1,
+            38,
+            2,
+            "CONDITIONING"
+        ],
+        [
+            88,
+            12,
+            2,
+            38,
+            3,
+            "LATENT"
+        ],
+        [
+            90,
+            38,
+            0,
+            8,
+            0,
+            "LATENT"
+        ],
+        [
+            116,
+            8,
+            0,
+            26,
+            0,
+            "IMAGE"
+        ],
+        [
+            134,
+            15,
+            0,
+            14,
+            0,
+            "MODEL"
+        ],
+        [
+            159,
+            83,
+            0,
+            12,
+            5,
+            "INT"
+        ],
+        [
+            160,
+            83,
+            0,
+            26,
+            1,
+            "INT"
+        ],
+        [
+            161,
+            23,
+            0,
+            84,
+            0,
+            "IMAGE"
+        ],
+        [
+            162,
+            84,
+            0,
+            12,
+            3,
+            "INT"
+        ],
+        [
+            163,
+            84,
+            1,
+            12,
+            4,
+            "INT"
+        ],
+        [
+            166,
+            14,
+            0,
+            38,
+            0,
+            "MODEL"
+        ],
+        [
+            167,
+            89,
+            0,
+            12,
+            2,
+            "VAE"
+        ],
+        [
+            168,
+            89,
+            0,
+            8,
+            1,
+            "VAE"
+        ],
+        [
+            169,
+            90,
+            0,
+            38,
+            4,
+            "INT"
+        ]
+    ],
+    "groups": [
+        {
+            "id": 1,
+            "title": "LOAD AN IMAGE HERE and press Queue !",
+            "bounding": [
+                -1117,
+                -638,
+                891,
+                80
+            ],
+            "color": "#A88",
+            "font_size": 45,
+            "flags": {}
+        }
+    ],
+    "config": {},
+    "extra": {
+        "ds": {
+            "scale": 0.8264462809917361,
+            "offset": {
+                "0": 691.8140869140625,
+                "1": 595.0862426757812
+            }
+        },
+        "VHS_latentpreview": false,
+        "VHS_latentpreviewrate": 0,
+        "VHS_MetadataImage": true,
+        "VHS_KeepIntermediate": true
+    },
+    "version": 0.4
+}
