@@ -538,5 +538,17 @@
     "apt": [],
     "sha": "",
     "cached": "False"
+  },
+  {
+    "url": "https://github.com/NyaamZ/efficiency-nodes-ED",
+    "name": "efficiency-nodes-ED",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {},
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "sha": "",
+    "cached": "False"
   }
 ]
