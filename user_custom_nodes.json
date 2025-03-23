@@ -584,5 +584,29 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI-tbox",
+    "url": "https://github.com/ai-shizuka/ComfyUI-tbox",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "ai-shizuka",
+      "title": "ComfyUI-tbox",
+      "reference": "https://github.com/ai-shizuka/ComfyUI-tbox",
+      "files": [
+        "https://github.com/ai-shizuka/ComfyUI-tbox"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes:ImageLoader, ImageSaver, ImagesSaver, ImageResize, ImageSize, GFPGANNode, MaskAddNode, Video Load, ..."
+    },
+    "nodes": [
+      "DWPreprocessor",
+      "LineArtPreprocessor"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
