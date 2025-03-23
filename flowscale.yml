@@ -221,3 +221,7 @@ normal_workflows:
     name: fashion_photography_workflow.json
     file: inpainting_and_outpainting/fashion_photography_workflow.json
     version: 1
+  - id: llt7chb5ngs
+    name: flux_consistent_character_sheet.json
+    file: openart/flux_consistent_character_sheet.json
+    version: 0
