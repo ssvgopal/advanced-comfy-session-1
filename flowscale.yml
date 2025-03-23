@@ -233,3 +233,7 @@ normal_workflows:
     name: linkedin_profile_builder.json
     file: openart/linkedin_profile_builder.json
     version: 0
+  - id: f93ht5jcubp
+    name: old_photo_reimagine_restoration.json
+    file: openart/old_photo_reimagine_restoration.json
+    version: 0
