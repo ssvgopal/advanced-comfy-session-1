@@ -184,12 +184,12 @@ workflows:
   - id: lvkhz772w7
     name: old_photo_reimagine_restoration_api.json
     file: openart/old_photo_reimagine_restoration_api.json
-    version: 2
+    version: 3
     description: ''
     inputs: []
     outputs: []
     skip_preprocess: true
-    advancedConfig: true
+    advancedConfig: false
 normal_workflows:
   - id: dt1vvo7wj2u
     name: basic_inpainting.json
@@ -254,7 +254,7 @@ normal_workflows:
   - id: f93ht5jcubp
     name: old_photo_reimagine_restoration.json
     file: openart/old_photo_reimagine_restoration.json
-    version: 2
+    version: 3
   - id: 89x5xwyl61x
     name: old_photo_restoration_workflow.json
     file: openart/old_photo_restoration_workflow.json
