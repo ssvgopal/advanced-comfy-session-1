@@ -514,5 +514,17 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
+  },
+  {
+    "url": "https://github.com/gokayfem/ComfyUI_VLM_nodes",
+    "name": "ComfyUI_VLM_nodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {},
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "sha": "",
+    "cached": "False"
   }
 ]
