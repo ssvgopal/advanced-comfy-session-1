@@ -550,5 +550,39 @@
     "apt": [],
     "sha": "",
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI-YOLO",
+    "url": "https://github.com/kadirnar/ComfyUI-YOLO",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "kadirnar",
+      "title": "ComfyUI-YOLO",
+      "id": "comfy-yolo",
+      "reference": "https://github.com/kadirnar/ComfyUI-YOLO",
+      "files": [
+        "https://github.com/kadirnar/ComfyUI-YOLO"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes:Load Ultralytics Model, Ultralytics Inference, Ultralytics Visualization, Convert to Dictionary, BBox to XYWH"
+    },
+    "nodes": [
+      "ViewText",
+      "ViewText",
+      "ViewText",
+      "ViewText",
+      "ViewText",
+      "ViewText",
+      "ViewText",
+      "ViewText",
+      "ViewText",
+      "ViewText",
+      "ViewText"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
