@@ -380,5 +380,139 @@
     "pip": [],
     "preemptions": [],
     "cached": "False"
+  },
+  {
+    "name": "KJNodes for ComfyUI",
+    "url": "https://github.com/kijai/ComfyUI-KJNodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "kijai",
+      "title": "KJNodes for ComfyUI",
+      "id": "kjnodes",
+      "reference": "https://github.com/kijai/ComfyUI-KJNodes",
+      "files": [
+        "https://github.com/kijai/ComfyUI-KJNodes"
+      ],
+      "install_type": "git-clone",
+      "description": "Various quality of life -nodes for ComfyUI, mostly just visual stuff to improve usability."
+    },
+    "nodes": [
+      "JoinStringMulti",
+      "JoinStringMulti"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "comfyui-reactor-node",
+    "url": "https://github.com/Gourieff/ComfyUI-ReActor",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Gourieff",
+      "title": "comfyui-reactor-node",
+      "reference": "https://github.com/Gourieff/ComfyUI-ReActor",
+      "files": [
+        "https://github.com/Gourieff/ComfyUI-ReActor"
+      ],
+      "install_type": "git-clone",
+      "description": "The Fast and Simple Face Swap Extension Node for ComfyUI, based on ReActor SD-WebUI Face Swap Extension"
+    },
+    "nodes": [
+      "ReActorFaceSwap"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI Inspire Pack",
+    "url": "https://github.com/ltdrdata/ComfyUI-Inspire-Pack",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Dr.Lt.Data",
+      "title": "ComfyUI Inspire Pack",
+      "id": "inspire",
+      "reference": "https://github.com/ltdrdata/ComfyUI-Inspire-Pack",
+      "files": [
+        "https://github.com/ltdrdata/ComfyUI-Inspire-Pack"
+      ],
+      "install_type": "git-clone",
+      "description": "This extension provides various nodes to support Lora Block Weight and the Impact Pack. Provides many easily applicable regional features and applications for Variation Seed."
+    },
+    "nodes": [
+      "KSamplerAdvanced //Inspire"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-WJNodes",
+    "url": "https://github.com/807502278/ComfyUI-WJNodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "807502278",
+      "title": "ComfyUI-WJNodes",
+      "reference": "https://github.com/807502278/ComfyUI-WJNodes",
+      "files": [
+        "https://github.com/807502278/ComfyUI-WJNodes"
+      ],
+      "install_type": "git-clone",
+      "description": "Ready to use upon download. No need to install dependencies for the time being.\nIf there are new functions or suggestions, please provide feedback.\nAttention! The delfile node is not recommended for use on servers. I am not responsible for any losses incurred."
+    },
+    "nodes": [
+      "PrimitiveNode",
+      "PrimitiveNode"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI",
+    "url": "https://github.com/comfyanonymous/ComfyUI",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Unknown",
+      "title": "ComfyUI",
+      "files": [
+        "https://github.com/comfyanonymous/ComfyUI"
+      ],
+      "install_type": "git-clone"
+    },
+    "nodes": "GetNode",
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI_Custom_Nodes_AlekPet",
+    "url": "https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Unknown",
+      "title": "ComfyUI_Custom_Nodes_AlekPet",
+      "files": [
+        "https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet"
+      ],
+      "install_type": "git-clone"
+    },
+    "nodes": "DeepTranslatorTextNode",
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
