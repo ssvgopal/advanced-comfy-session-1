@@ -526,5 +526,17 @@
     "apt": [],
     "sha": "",
     "cached": "False"
+  },
+  {
+    "url": "https://github.com/LevelPixel/ComfyUI-LevelPixel",
+    "name": "ComfyUI-LevelPixel",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {},
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "sha": "",
+    "cached": "False"
   }
 ]
